@@ -1,0 +1,812 @@
+/*font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* color pallete
+#E6E8E6
+#04396e
+#3E7CB1
+#CED0CE
+#E8E9ED
+#363537
+*/
+
+/* universal */
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #e6e8e6;
+  font-family: "poppins";
+}
+
+li,
+a,
+button {
+  font-family: "poppins";
+  font-size: 15px;
+  color: #e8e9ed;
+  text-decoration: none;
+}
+
+/* header */
+
+.header {
+  box-sizing: border-box;
+  background-color: #6e0404;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2.5px 5%;
+}
+
+#header_h1 {
+  color: #e8e9ed;
+  font-family: "poppins";
+  margin: auto;
+  padding-right: 700px;
+}
+
+#logo_user {
+  width: 35px;
+  height: auto;
+  margin-right: 50px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.tooltip {
+  color: black;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  right: 10px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.nav_links {
+  list-style: none;
+  margin-left: -100px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #e8e9edb4;
+}
+
+/* login page */
+#login_table {
+  background-color: #ffffffdf;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 0;
+  border-radius: 5%;
+  width: 25%;
+  box-shadow: 7.5px 10px 10px #00000059;
+}
+
+#tombol_login {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  padding: 10px 165px;
+  background-color: #6e0404;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-family: "poppins";
+  font-size: 17.5px;
+}
+
+#tombol_login {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#tombol_login:hover {
+  background-color: #122348;
+}
+
+#login_body {
+  background: linear-gradient(45deg, #6e0404, #c86e6e, #180101);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.kolom {
+  width: 97.5%;
+  border-radius: 50px;
+}
+
+#sign_up {
+  text-align: center;
+  font-family: "poppins";
+  font-size: 13.5px;
+}
+
+#welcome {
+  font-size: 50px;
+  font-family: "poppins";
+  font-weight: 500px;
+  color: rgb(0, 0, 0);
+}
+
+.userpass {
+  height: 0px;
+  font-size: 15px;
+  font-family: "poppins";
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  padding: 0px 5px;
+}
+
+/*index*/
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url(assets/TokoSepatu.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.top_part {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "poppins";
+  font-size: 30px;
+}
+
+.main_part {
+  background-color: #e6e8e6;
+  width: auto;
+  padding: 100px;
+  height: auto;
+  font-family: "poppins";
+}
+
+.header1 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.e {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product_card {
+  max-width: 12em;
+  height: 25em;
+  background-color: #ffffff;
+  padding: 1em;
+  box-shadow: 0 5px 15px #000000b6;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* PRODUCT CARD */
+
+.product_card img {
+  max-width: 100%;
+}
+
+.product_card h4 {
+  font-size: 15px;
+  margin: 0.5em 0;
+}
+
+.product_card div {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product_card button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 1em;
+}
+
+/* Beli Barang */
+
+.beli_container {
+  margin: 75px 75px 75px 125px;
+}
+
+.gambar_produk img {
+  height: 500px;
+  width: auto;
+  float: left;
+  margin-right: 30px;
+}
+
+.row_deskripsi {
+  height: auto;
+  display: flex;
+}
+
+.deskripsi_produk {
+  flex-basis: 55%;
+}
+
+.row_deskripsi .deskripsi_produk p {
+  margin-top: 10px;
+  margin-bottom: 75px;
+}
+
+.row_harga {
+  height: auto;
+  display: flex;
+}
+
+.harga {
+  flex-basis: 55%;
+}
+
+.row_harga .deskripsi_harga h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.jumlah_beli {
+  position: absolute;
+  top: 35px;
+  right: 200px;
+}
+
+.jumlah_beli table {
+  text-align: center;
+  background-color: #ffffffdf;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 0;
+  border-radius: 5%;
+  width: 25%;
+  border: 1px solid;
+  margin-right: 0px;
+  margin-top: 100px;
+}
+
+.tabel_jumlah_beli tr {
+  height: 10px;
+}
+
+.bar_tambah {
+  width: 12.5em;
+  border-radius: 50px;
+}
+
+.bar_tambah input[type="number"] {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+#tombol_beli {
+  display: flex;
+  margin: auto;
+  width: 75%;
+  height: 50px;
+  padding: 10px 47.5px;
+  background-color: #6e0404;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-family: "poppins";
+  font-size: 17.5px;
+  cursor: pointer;
+}
+
+#tombol_beli {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#tombol_beli:hover {
+  background-color: #6e0404;
+}
+
+/*Keranjang*/
+
+.cart_container {
+  margin: 50px 75px 75px 75px;
+}
+
+.cart_container table {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.cart_container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.cart_container tr:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+
+.cart_container #special_row {
+  background-color: #6e0404;
+  color: #fff;
+}
+
+.cart_container #delete {
+  color: red;
+  font-size: 20px;
+}
+
+.display_keranjang img {
+  height: 250px;
+  width: auto;
+}
+
+.cart_container #Check_out {
+  background-color: #6e0404;
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.cart_container #Check_out:hover {
+  background-color: #6e0404;
+}
+
+/* history */
+
+.history_container {
+  margin: 50px 75px 75px 75px;
+}
+
+.history_container table {
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+  color: black;
+}
+
+.history_container a {
+  color: black;
+  font-size: large;
+}
+
+.history_container li {
+  color: black;
+  text-align: left;
+}
+
+#special_row1 {
+  background-color: #6e0404;
+  color: #fff;
+}
+
+#special_row2 {
+  background-color: #6e0404;
+  color: #fff;
+}
+
+.container_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.container_table tr:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+
+/*SIGNUP PELANGGAN PAGE*/
+
+.signup_table table {
+  background-color: #ffffffdf;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  margin-bottom: 0px;
+  border-radius: 5%;
+  width: 45%;
+  box-shadow: 7.5px 10px 10px #00000059;
+}
+
+.signup_table input[type="text"] {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+.signup_table input[type="password"] {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+.signup_table a {
+  color: #155da4;
+  font-size: 15px;
+}
+
+.signup_table input[type="submit"] {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  padding: 10px 165px;
+  background-color: #04396e;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-family: "poppins";
+  font-size: 17.5px;
+}
+
+.signup_table input[type="submit"] {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup_table input[type="submit"]:hover {
+  background-color: #6e0404;
+}
+
+.signup_table input {
+  width: 97.5%;
+  border-radius: 50px;
+}
+
+.signup_table p {
+  font-size: 40px;
+  font-family: "poppins";
+  font-weight: 500px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: bold;
+}
+
+.signup_table input[value="Daftar"] {
+  padding-left: 310px;
+}
+
+.signup_table input[type="date"] {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+.signup_table select {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  font-family: "poppins";
+  font-weight: bold;
+  width: 97.5%;
+  border-radius: 50px;
+}
+
+#le_body {
+  background: linear-gradient(45deg, #04396e, #3e7cb1, #04396e);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#admin_signup {
+  text-align: center;
+  font-weight: bold;
+}
+
+#the_body {
+  background: linear-gradient(45deg, #3e046e, #3e046e9a, #3e046e);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*ADMIN CHECK*/
+
+#la_body {
+  background: linear-gradient(45deg, #3e046e, #3e046e9a, #3e046e);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.admin_pass table {
+  background-color: #ffffffdf;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  border-radius: 5%;
+  width: 20%;
+  box-shadow: 7.5px 10px 10px #00000059;
+}
+
+.admin_pass h2 {
+  text-align: center;
+}
+
+.admin_pass input[type="password"] {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+.admin_pass input[type="submit"] {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  padding: 10px 165px;
+  background-color: #04396e;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-family: "poppins";
+  font-size: 17.5px;
+}
+
+.admin_pass input[type="submit"] {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin_pass input[type="submit"]:hover {
+  background-color: #122348;
+}
+
+.admin_pass input {
+  width: 97.5%;
+  border-radius: 50px;
+}
+
+/*ADMIN CONTROL PANEL*/
+
+.wrapper .sidebar {
+  background: #122348;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.wrapper .sidebar .profile img {
+  padding-top: 40px;
+  padding-left: 45px;
+  width: 125px;
+  height: auto;
+}
+
+.wrapper .sidebar .profile p {
+  padding-left: 67.5px;
+  padding-right: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.wrapper .sidebar .sidebar_menu {
+  padding-top: 40px;
+}
+
+.wrapper .sidebar .sidebar_menu ul li {
+  display: block;
+  padding: 10px 10px;
+  border-bottom: 1px solid white;
+  color: white;
+  position: relative;
+  list-style-type: none;
+}
+
+.wrapper .main_thing {
+  background: white;
+  width: 1000px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 5.5px 8px 8px #00000059;
+  margin-left: 22.5em;
+}
+
+.main_thing .child1 h1 {
+  font-size: 45px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.wrapper .action_menu {
+  background: white;
+  width: 1000px;
+  height: 325px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 5.5px 8px 8px #00000059;
+  margin-left: 22.5em;
+  margin-top: 5em;
+}
+
+.wrapper .action_menu .hero_cuy {
+  text-align: center;
+  padding-top: 42.5px;
+  font-size: 20px;
+}
+
+.wrapper .action_menu .children button {
+  color: black;
+  width: 150%;
+  height: 60px;
+  background-color: #04396e;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-family: "poppins";
+  font-size: 17.5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.wrapper .action_menu .children button:hover {
+  background-color: #122348;
+}
+
+.wrapper .action_menu .children ul li {
+  list-style-type: none;
+}
+
+.wrapper .action_menu .children li {
+  float: left;
+  padding: 15px 42px;
+}
+
+#admin_panel_body {
+  background-color: #e3e3e3;
+}
+
+/*tampil_user*/
+
+.wrapper .user_table table {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.wrapper .user_table {
+  margin: 50px 75px 75px 75px;
+}
+
+.wrapper .user_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.wrapper .user_table tr:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+
+.wrapper .user_table button {
+  width: auto;
+  height: 40px;
+  background-color: #04396e;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-family: "poppins";
+  font-size: 17.5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/*tampil game*/
+
+.wrapper .game_table table {
+  display: block;
+  width: 100%;
+  max-width: 1300px;
+  table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper .game_table {
+  margin: 50px 75px 75px 75px;
+}
+
+.wrapper .game_table #tabel_deskripsi {
+  max-width: 500px;
+}
+
+.wrapper .game_table button {
+  width: 90px;
+  height: 30px;
+  /* padding: 10px 165px; */
+  background-color: #04396e;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-family: "poppins";
+  font-size: 17.5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.wrapper .game_table #button_cuy {
+  text-align: center;
+}
+
+.wrapper .game_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.wrapper .game_table tr:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+
+.wrapper .game_table button:hover {
+  background-color: #122348;
+}
+
+.wrapper .game_table #special_row1,
+#special_row2 {
+  text-align: center;
+}
+
+/*Ubah Game*/
+
+.signup_table input[type="numeric"] {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+/* color pallete
+#E6E8E6
+#04396e
+#3E7CB1
+#CED0CE
+#E8E9ED
+#363537
+*/
